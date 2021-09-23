@@ -93,7 +93,7 @@ def update_resources(command, resources_passed):
 
 def make_coffee(command, resources_passed):
     updated_resources = update_resources(command, resources_passed)
-    print(f"Here is your {command}. Enjoy!")
+    print(f"Here is your {command}. Enjoy! ☕")
     return updated_resources
 
 
@@ -149,7 +149,7 @@ def main():
         action = apply_command(command)
 
         if not action:
-            break
+            return
 
 
 main()
